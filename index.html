@@ -1,185 +1,193 @@
 <!DOCTYPE html>
-<html>
-<title>Charles World</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="http://home.fredonia.edu/sites/default/files/logo.png" type="image/png" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-green">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="Charles.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Charles Marshall.</h1>
-    <p><font face ="impact"font size="6" color ="white">Computer Science Major @ SUNY FREDONIA.</font></p>
-    <img src="BlackBillyCharles.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+        <title>Charles World</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="https://www.charlesgmarshall.com/" class="nav__logo">Charles M.</a>
+                </div>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
-    <h2 class="w3-text-black">"It's fine to celebrate success but it is more important to heed the lessons of failure." - Bill Gates</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p><font face="verdana" color="black">Charles Marshall is an aspiring software engineer with deep interests in technology and economics. He is currently a freshman at SUNY Fredonia,  At school, he maintains academics and leadership positions. Outside of the classroom, Charles Marshall constantly works on his coding projects and helps the Fredonia community. Aside from technology and programming, he studies different aspects of business and cyber security from a variety of books and online resources.He hopes one day to give back to his community in the Bronx and start a program to help kids learn how to code.</font></p>
-    <h3 class="w3-padding-16 w3-text-black">My Skills</h3>
-    <p class="w3-wide">HTML + CSS</p>
-    <div class="w3-black">
-      <div class="w3-black" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">JAVA</p>
-    <div class="w3-black">
-      <div class="w3-black" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">C++</p>
-    <div class="w3-black">
-      <div class="w3-black" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#photos" class="nav__link">Photo</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="Charles_Resume.pdf"></i> Download Resume
-    </button>
-    
-   
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-     
-    <!-- End Grid/Pricing tables -->
-    </div>
-    
-    
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-black">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Charles</span><br>Software Engineer</h1>
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="ASC-CEO.jpg" style="width:100%">
-        <img src="banner-bg.JPG" style="width:100%">
-        <img src="TwitterASC.jpg" style="width:100%">
-      </div>
+                    <a href="https://charlescomp.github.io/Messenger.tlk/" class="button">Contact</a>
+                </div>
 
-      <div class="w3-half">
-        <img src="Makerfaire.JPG" style="width:100%">
-        <img src="Google.JPG" style="width:100%">
-        <img src="Yahoo!.png" style="width:100%">
-        <img src="Makerfaire1.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/charlescomp-marshall/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100002508778867" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://github.com/charlescomp" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-black" id="contact">
-    <h2 class="w3-text-black">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+                <div class="home__img">
+                    <img src="https://pbs.twimg.com/profile_images/1264822108007419904/Oo7gTyE9_400x400.jpg" alt="">
+                </div>
+            </section>
 
-        <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-black w3-xlarge">
-    <p class="w3-big">Powered by <a href="http://charlesworld.strikingly.com/" target="_blank" class="w3-hover-text-red">Charles The H@cker</a></p>
-   <div class="w3-bar w3-black w3-hide-medium">
-  <a href="https://www.facebook.com/profile.php?id=100002508778867" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="https://github.com/charlescomp" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
-  <a href="https://www.youtube.com/channel/UCOm1S89l9gVhnvzGA-opiiQ?view_as=subscriber" class="w3-bar-item w3-button"><i class="fa fa-youtube"></i></a>
-  <a href="https://www.linkedin.com/in/charlescomp-marshall/" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-</div>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-  
-  <!-- End footer -->
-  </footer>
-    <div class="w3-section">
-      <p><font size ="4" color ="black"><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Bronx , NY</font></p>
-      <p><font size="4" color="black"><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +00 N/A</font></p>
-      <p><font size="4" color ="black"><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Email: mars5504@fredonia.edu</font></p>
-    </div><br>
-    <p>Lets get in touch. Send me a message:</p>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/Linkedin.jpg" alt="">
+                    </div>
 
-  <body>
-    <!-- What user will use for input -->
-    <input placeholder='Name' type='text' id='name'>
-    <input placeholder='Message' type='text' id='message'>
-    <!-- button for sending message to message board -->
-    <button onclick='sendMessage()' id='js'>Post Me!!</button>
-    <!-- Empty div where the messages will show up -->
-    <div id='messageBoard'></div>
-    <!-- Paste your snippet here, will include firebase CDN -->
-    
-<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+                    <div>
+                        <h2 class="about__subtitle">Charles Marshall</h2>
+                        <p class="about__text">is an aspiring software engineer with deep interests in technology and economics. He is currently a senior at SUNY Fredonia, At school, he maintains academics and leadership positions. Outside of the classroom, Charles Marshall constantly works on his coding projects and helps the Fredonia community. Aside from technology and programming, he studies different aspects of business and cyber security from a variety of books and online resources.He hopes one day to give back to his community in the Bronx and start a program to help kids learn how to code.</p>
+                    </div>
+                </div>
+            </section>
 
-<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCqviPtdl4anOadx44O42fQlxGiHtdnCtk",
-    authDomain: "charlesmessenger-1d3fe.firebaseapp.com",
-    databaseURL: "https://charlesmessenger-1d3fe.firebaseio.com",
-    storageBucket: "charlesmessenger-1d3fe.appspot.com",
-  };
-  firebase.initializeApp(config);
-</script>
-  <!-- adding jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <!-- script we'll make dynamic changes with. You'll have to create this file -->
-    <script src='myChat.js'></script>
-  </body>
-  <!-- End Contact Section -->
-  </div>
-  
-   
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-<!-- END PAGE CONTENT -->
-</div>
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">The Skills That Are Listed May Not Reflect The Skills Charles Has Acquired Over The Years Of Coding :)</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
 
-</body>
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+
+
+                    <div>
+                        <img src="assets/img/visionary.jpg" alt="Charles Just Looking Into Camera Holding A Computer Charles Loves This Photo" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PHOTO =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Photo Dump</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/IMG_5145.JPG" alt="Charles working on Battery Station For Robotics Competition">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/Google.JPG" alt="Charles in a Google Workshop">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/flatrion.jpg" alt="Charles working on some code">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/IMG_6743.JPG" alt="Charles in Rochester New York">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/ASC-CEO.jpg" alt="Charles With Founder of All Star Code">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/Yahoo!.png" alt="Charles in the Yahoo Office">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/IMG_9228.JPG" alt="Charles is smiling in the Robotics Room in High-School">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/IMG_3221.JPG" alt="Charles flexing while coding">
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/IMG_3998.JPG" alt="Charles Sharing His Future Plans">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enter" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Charles M</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/profile.php?id=100002508778867" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://github.com/charlescomp" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/charlescomp-marshall/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
